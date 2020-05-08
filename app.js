@@ -107,7 +107,7 @@ app.delete("/blogs/:id", function(req, res){
 
 // RESTFUL ROUTES 
 
-
-app.listen(3000, function(){
-    console.log("Blog is connected");
-});
+app.listen(process.env.PORT, process.env.IP);
+// app.listen(3000, function(){
+//     console.log("Blog is connected");
+// });
